@@ -39,6 +39,14 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
             'submitted_at': u'2017-03-20T19:22:03.880652Z'
         }
     """
+
+    print("*** Arguments ***")
+    print("test_annotation_file: ", test_annotation_file)
+    print("user_submission_file: ", user_submission_file)
+    print("phase_codename: ", phase_codename)
+    print(kwargs['submission_metadata'])
+    print("")
+
     output = {}
     if phase_codename == "dev-groundtruth":
         print("Evaluating for dev-groundtruth")
